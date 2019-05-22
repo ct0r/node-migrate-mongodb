@@ -1,6 +1,6 @@
 {
   "name": "node-migrate-mongodb",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Mongo store for node-migrate",
   "main": "index.js",
   "scripts": {
