@@ -1,0 +1,51 @@
+{
+  "name": "node-migrate-mongodb",
+  "version": "0.0.0",
+  "description": "Mongo store for node-migrate",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava",
+    "lint": "eslint *.js",
+    "coverage": "nyc --reporter=lcov npm run test"
+  },
+  "repository": "ct0r/node-migrate-mongodb",
+  "keywords": [
+    "node-migrate",
+    "mongodb",
+    "mongo"
+  ],
+  "author": "ct0r",
+  "license": "MIT",
+  "peerDependencies": {
+    "mongodb": "3.x"
+  },
+  "devDependencies": {
+    "arg": "^4.1.0",
+    "ava": "^1.4.1",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "mongodb": "^3.2.5",
+    "nyc": "^14.1.1",
+    "prettier": "^1.17.1"
+  },
+  "ava": {
+    "babel": false,
+    "compileEnhancements": false
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:prettier/recommended"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 8
+    },
+    "env": {
+      "es6": true,
+      "node": true
+    }
+  },
+  "prettier": {
+    "singleQuote": true
+  }
+}
